@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api>
+    <version>1</version>
+    <date>2013-07-24</date>
+    <categories>
+        <category>
+            <name>category1</name>
+            <functions>
+                <function>
+                    <name>firstFunction</name>
+                    <type>Get</type>
+                    <display>firstFunction/{id}</display>
+                    <shortDescription>Short Description of first function</shortDescription>
+                    <return>application/xml</return>
+                    <description>Longer Description of first function</description>
+                    <classes>
+                        <class>
+                            <name>First Class</name>
+                            <values>
+                                <value>
+                                    <name>returnName</name>
+                                    <type>text</type>
+                                    <description>The first return value of the Class</description>
+                                </value>
+                                <value>
+                                    <name>title</name>
+                                    <type>text</type>
+                                    <description>The second return value of the class</description>
+                                </value>
+                                <value>
+                                    <name>sources</name>
+                                    <type>text</type>
+                                    <description>The third return value of the class</description>
+                                </value>
+                            </values>
+                        </class>
+                        <class>
+                            <name>Second Class</name>
+                            <values>
+                                <value>
+                                    <name>viewID</name>
+                                    <type>text</type>
+                                    <description>The view ID of the data source used</description>
+                                </value>
+                                <value>
+                                    <name>url</name>
+                                    <type>text</type>
+                                    <description>The base url used to generate queries (missing q parameter)</description>
+                                </value>
+                            </values>
+                        </class>
+                    </classes>
+                    <parameters>
+                        <parameter>
+                            <name>param</name>
+                            <description>The description of the parameter</description>
+                            <type>INT</type>
+                        </parameter>
+                    </parameters>
+                    <errors>
+                        <error>
+                            <status>Error Name</status>
+                            <message>Message received on error</message>
+                        </error>
+                        <error>
+                            <status>Error Name 2</status>
+                            <message>This error message</message>
+                        </error>
+                        <error>
+                            <status>Error Name 3</status>
+                            <message>This error message</message>
+                        </error>
+                    </errors>
+                    <examples>
+                        <example>
+                            <name>Example API Usage</name>
+                            <url>http://example.com</url>
+                        </example>
+                        <example>
+                            <name>Another Example</name>
+                            <url>http://example2.com</url>
+                        </example>
+                    </examples>
+                </function>
+                <function>
+                    <name>secondFunction</name>
+                    <type>Get</type>
+                    <display>secondFunction/{id}</display>
+                    <shortDescription>Short Description for this function</shortDescription>
+                    <return>application/xml</return>
+                    <description>Longer Description for this function</description>
+                    <classes>
+                        <class>
+                            <name>First Class</name>
+                            <values>
+                                <value>
+                                    <name>returnName</name>
+                                    <type>text</type>
+                                    <description>The first return value of the Class</description>
+                                </value>
+                                <value>
+                                    <name>title</name>
+                                    <type>text</type>
+                                    <description>The second return value of the class</description>
+                                </value>
+                                <value>
+                                    <name>sources</name>
+                                    <type>text</type>
+                                    <description>The third return value of the class</description>
+                                </value>
+                            </values>
+                        </class>
+                    </classes>
+                    <parameters>
+                        <parameter>
+                            <name>param</name>
+                            <description>The description of the parameter</description>
+                            <type>INT</type>
+                        </parameter>
+                        <parameter>
+                            <name>param2</name>
+                            <description>The description of the parameter</description>
+                            <type>INT</type>
+                        </parameter>
+                    </parameters>
+                    <errors>
+                        <error>
+                            <status>Error Name</status>
+                            <message>Message received on error</message>
+                        </error>
+                        <error>
+                            <status>Error Name 2</status>
+                            <message>This error message</message>
+                        </error>
+                    </errors>
+                    <examples>
+                        <example>
+                            <name>Example API Usage</name>
+                            <url>http://example.com</url>
+                        </example>
+                        <example>
+                            <name>Another Example</name>
+                            <url>http://example2.com</url>
+                        </example>
+                    </examples>
+                </function>
+            </functions>
+        </category>
+        <category>
+            <name>user</name>
+            <functions>
+                <function>
+                    <name>postFunction</name>
+                    <type>Post</type>
+                    <display>postFunc</display>
+                    <shortDescription>short description of post function</shortDescription>
+                    <return>application/xml</return>
+                    <description>Longer description of post function</description>
+                    <classes>
+                        <class>
+                            <name>Something</name>
+                            <values>
+                                <value>
+                                    <name>id</name>
+                                    <type>int</type>
+                                    <description>The ID of the Something</description>
+                                </value>
+                                <value>
+                                    <name>firstname</name>
+                                    <type>text</type>
+                                    <description>First Name of the Something</description>
+                                </value>
+                                <value>
+                                    <name>lastname</name>
+                                    <type>text</type>
+                                    <description>Last Name of the Something</description>
+                                </value>
+                                <value>
+                                    <name>email</name>
+                                    <type>text</type>
+                                    <description>The Something Email</description>
+                                </value>
+                            </values>
+                        </class>
+                    </classes>
+                    <parameters>
+                        <parameter>
+                            <name>email</name>
+                            <description>The Email for the Account</description>
+                            <type>TEXT</type>
+                        </parameter>
+                        <parameter>
+                            <name>password</name>
+                            <description>The Password for the Account</description>
+                            <type>TEXT</type>
+                        </parameter>
+                    </parameters>
+                    <errors>
+                        <error>
+                            <status>Post Failed</status>
+                            <message>No Account with that email/password combination</message>
+                        </error>
+                    </errors>
+                    <examples>
+                        <example>
+                            <name>Function Example</name>
+                            <url>http://examples.com</url>
+                        </example>
+                    </examples>
+                </function>
+            </functions>
+        </category>
+    </categories>
+</api>
