@@ -16,31 +16,31 @@ if needed. Has the Structure:
 -root
 --api version
 
---categories
----category
-----name
-----functions
------function
-------type
-------descriptions
+--categories  
+---category  
+----name  
+----functions  
+-----function  
+------type  
+------descriptions  
 
-------classes
--------class
---------name
+------classes  
+-------class  
+--------name  
 --------parameters of class
 
-------parameters
--------parameter
---------name
---------description
+------parameters  
+-------parameter  
+--------name  
+--------description  
 --------type
 
-------errors
--------error
---------status
+------errors  
+-------error  
+--------status  
 --------message
 
-------examples
--------example
---------name
+------examples  
+-------example  
+--------name  
 --------url
